@@ -119,12 +119,12 @@ button:focus {
 
 .topnav a:hover,
 .topnav a:focus {
-    color: #FFC300;
+    color: #f700ff;
     text-decoration: underline;
 }
 
 .topnav a:focus {
-    outline: 3px solid #FFC300;
+    outline: 3px solid #06e1d3;
 }
 
 .topnav a.active {
@@ -194,6 +194,26 @@ footer p:last-child {
     margin: 0;
 }
 
+/* home page */
+
+.home-row {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.home-row a {
+    color: #C400EC;
+    text-align: center;
+    font-size: 38.64px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.home-row h2 {
+    margin-top: 0;
+}
+
 
 /* rinks page */
 
@@ -202,7 +222,16 @@ footer p:last-child {
 }
 
 
+
+
 /* Media Queries */
+
+@media (min-width: 1160px) {
+    .home-row {
+        flex-direction: row;
+    }
+
+}
 
 @media (min-width: 480px) {
     .topnav .icon {
@@ -221,4 +250,6 @@ footer p:last-child {
         padding: 0;
         justify-content: flex-start;
     }
+
+
 }
