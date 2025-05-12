@@ -1,4 +1,4 @@
-/* Font loding
+/* Font loading
  */
 
 @font-face {
@@ -101,6 +101,15 @@ h3,
 h4 {
     font-family: "Gasoek One", sans-serif;
     font-weight: 400;
+}
+
+a {
+    color: #8900b0;
+    transition: color 0.5s ease;
+}
+
+a:hover {
+    color: #1100ff;
 }
 
 h1 {
@@ -266,6 +275,28 @@ footer p:last-child {
     margin: 0;
 }
 
+/* color scheme blocks */
+
+.dark {
+    background:rgb(0, 0, 0);
+    color: rgb(252, 210, 217);
+}
+
+.dark h2, .dark h3 {
+    color: white;
+
+}
+
+.dark a {
+    color: yellow;
+}
+
+.light {
+    background: #badd13;
+}
+
+
+
 /* home page */
 
 .home-row {
@@ -289,8 +320,28 @@ footer p:last-child {
 
 /* rinks page */
 
+.rinks header {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), url('img/woodnwheel.jpg');
+    background-position: center center
+}
+
 .st-img {
     width: 100%;
+}
+
+
+/* trails page */
+
+.trails header {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), url('img/ap.jpg');
+    background-position: 38% 92%;
+}
+
+/* skateparks page */
+
+.skateparks header {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), url('img/nbsp.jpg');
+    background-position: 62% 16%;
 }
 
 
